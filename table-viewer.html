@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#eef0f3">
+  <title>Просмотр таблицы | Анастасия Домород</title>
+  <link rel="stylesheet" href="table-viewer.css?v=31">
+</head>
+<body>
+  <header class="table-header">
+    <a class="table-brand" href="index.html#work-samples">АНАСТАСИЯ ДОМОРОД</a>
+    <div class="table-copy">
+      <span>Портфолио</span>
+      <h1 id="document-title">Загрузка таблицы</h1>
+    </div>
+    <a class="table-back" href="index.html#work-samples">Вернуться к портфолио</a>
+  </header>
+
+  <nav class="sheet-tabs" id="sheet-tabs" aria-label="Листы таблицы"></nav>
+
+  <main class="table-main">
+    <div class="table-status" id="table-status" role="status" aria-live="polite">Подготавливаем таблицу…</div>
+    <div class="sheet-viewport" id="sheet-viewport" hidden>
+      <div class="sheet-stage" id="sheet-stage"></div>
+    </div>
+  </main>
+
+  <div class="table-controls" aria-label="Масштаб таблицы">
+    <button id="zoom-out" type="button" aria-label="Уменьшить масштаб">−</button>
+    <span id="zoom-value" aria-live="polite">100%</span>
+    <button id="zoom-in" type="button" aria-label="Увеличить масштаб">+</button>
+    <button class="fit-button" id="fit-width" type="button">По ширине</button>
+  </div>
+
+  <script type="module" src="table-viewer.js?v=31"></script>
+</body>
+</html>

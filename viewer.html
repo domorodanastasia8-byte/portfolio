@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#17191d">
+  <title>Просмотр работы | Анастасия Домород</title>
+  <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+  <header class="viewer-header">
+    <a class="viewer-brand" href="index.html#work-samples">АНАСТАСИЯ ДОМОРОД</a>
+    <div class="viewer-copy">
+      <span>Портфолио</span>
+      <h1 id="document-title">Загрузка документа</h1>
+    </div>
+    <a class="viewer-back" href="index.html#work-samples">Вернуться к портфолио</a>
+  </header>
+
+  <main class="viewer-main">
+    <div class="viewer-status" id="viewer-status" role="status" aria-live="polite">Подготавливаем просмотр…</div>
+    <canvas id="pdf-canvas" aria-label="Страница документа"></canvas>
+  </main>
+
+  <nav class="viewer-controls" aria-label="Навигация по документу">
+    <button id="prev-page" type="button" aria-label="Предыдущая страница">←</button>
+    <label class="page-control">Страница <input id="page-number" type="number" min="1" value="1" inputmode="numeric"> <span id="page-count">из —</span></label>
+    <button id="next-page" type="button" aria-label="Следующая страница">→</button>
+    <span class="control-divider" aria-hidden="true"></span>
+    <button id="zoom-out" type="button" aria-label="Уменьшить масштаб">−</button>
+    <span id="zoom-value" aria-live="polite">100%</span>
+    <button id="zoom-in" type="button" aria-label="Увеличить масштаб">+</button>
+  </nav>
+
+  <script type="module" src="viewer.js?v=32"></script>
+</body>
+</html>
